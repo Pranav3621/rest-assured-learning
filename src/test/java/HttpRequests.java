@@ -69,6 +69,21 @@ public class HttpRequests {
 	}
 	
 	@Test(priority=4)
+	public void partiallyUpdateUser() {
+		HashMap data = new HashMap();
+		data.put("title", "foo updated");
+			
+		given()
+			.contentType("application/json")
+			.body(data)
+		.when()
+			.patch("https://jsonplaceholder.typicode.com/posts/"+userId)
+		.then()
+			.statusCode(200)
+			.log().all();
+	}
+	
+	@Test(priority=5)
 	public void deleteUser() {
 		given()
 		.when()
