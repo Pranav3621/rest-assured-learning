@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-08T22:29:48 IST" name="Default suite" finished-at="2025-11-08T22:29:51 IST" duration-ms="2923">
+  <suite started-at="2025-11-09T15:52:08 IST" name="Default suite" finished-at="2025-11-09T15:52:13 IST" duration-ms="4368">
     <groups>
     </groups>
-    <test started-at="2025-11-08T22:29:48 IST" name="Default test" finished-at="2025-11-08T22:29:51 IST" duration-ms="2923">
+    <test started-at="2025-11-09T15:52:08 IST" name="Default test" finished-at="2025-11-09T15:52:13 IST" duration-ms="4368">
       <class name="HttpRequests">
-        <test-method signature="getUser()[pri:0, instance:HttpRequests@36b4fe2a]" started-at="2025-11-08T22:29:48 IST" name="getUser" finished-at="2025-11-08T22:29:51 IST" duration-ms="2848" status="PASS">
+        <test-method signature="getUsers()[pri:1, instance:HttpRequests@343570b7]" started-at="2025-11-09T15:52:08 IST" name="getUsers" finished-at="2025-11-09T15:52:11 IST" duration-ms="2929" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUser -->
+        </test-method> <!-- getUsers -->
+        <test-method signature="createUser()[pri:2, instance:HttpRequests@343570b7]" started-at="2025-11-09T15:52:11 IST" name="createUser" finished-at="2025-11-09T15:52:12 IST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:HttpRequests@343570b7]" started-at="2025-11-09T15:52:12 IST" name="updateUser" finished-at="2025-11-09T15:52:12 IST" depends-on-methods="HttpRequests.createUser" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="deleteUser()[pri:4, instance:HttpRequests@343570b7]" started-at="2025-11-09T15:52:12 IST" name="deleteUser" finished-at="2025-11-09T15:52:13 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
       </class> <!-- HttpRequests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
